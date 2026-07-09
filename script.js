@@ -1,11 +1,10 @@
 /* =====================================================================
-   Al Diallo — Portfolio
+   Alhousseiny Diallo — Security & IT Portfolio
    Minimal, dependency-free JS:
    1. Mobile nav toggle
-   2. Typing effect for the terminal line
-   3. Scroll-reveal for sections/cards
-   4. Copy-to-clipboard for email
-   5. Auto year in footer
+   2. Scroll-reveal for sections/cards
+   3. Copy-to-clipboard for email
+   4. Auto year in footer
    ===================================================================== */
 
 (function () {
@@ -30,29 +29,10 @@
     });
   }
 
-  /* ---------- 2. Typing effect ---------- */
-  const typedEl = document.getElementById("typed-line");
-  const phrase =
-    "Building AI-augmented security tools that make findings clear for everyone.";
-
+  /* ---------- 2. Reduced-motion preference ---------- */
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   ).matches;
-
-  if (typedEl) {
-    if (prefersReducedMotion) {
-      typedEl.textContent = phrase;
-    } else {
-      let i = 0;
-      (function type() {
-        if (i <= phrase.length) {
-          typedEl.textContent = phrase.slice(0, i);
-          i += 1;
-          setTimeout(type, 32);
-        }
-      })();
-    }
-  }
 
   /* ---------- 3. Scroll reveal ---------- */
   const revealTargets = document.querySelectorAll(

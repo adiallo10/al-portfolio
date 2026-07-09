@@ -1,38 +1,38 @@
 /* =====================================================================
-   Al Diallo — Portfolio
-   Dark, security/terminal-inspired theme. Clean and professional.
+   Alhousseiny Diallo — Security & IT Portfolio
+   Clean, professional light theme. Times New Roman throughout.
    Single stylesheet, mobile-first, no framework.
    ===================================================================== */
 
 /* ---------- Design tokens ---------- */
 :root {
-  /* Palette */
-  --bg:            #0a0e14;
-  --bg-elev:       #111721;
-  --bg-elev-2:     #161d2a;
-  --border:        #222b3a;
-  --border-soft:   #1b2330;
+  /* Palette — light, classic, professional */
+  --bg:            #fbfaf8;
+  --bg-elev:       #ffffff;
+  --bg-elev-2:     #f4f2ee;
+  --border:        #ddd7cc;
+  --border-soft:   #e8e4db;
 
-  --text:          #e6edf3;
-  --text-muted:    #9aa7b8;
-  --text-faint:    #66738a;
+  --text:          #1a1c20;
+  --text-muted:    #4c5058;
+  --text-faint:    #7c8088;
 
-  --accent:        #4ade80;   /* terminal green */
-  --accent-dim:    #2ea968;
-  --accent-cyan:   #38bdf8;
-  --amber:         #fbbf24;
-  --red:           #f87171;
+  --accent:        #1f3a5f;   /* deep navy */
+  --accent-dim:    #16293f;
+  --accent-cyan:   #2f5c8a;
+  --amber:         #b7791f;
+  --red:           #a03232;
 
-  /* Typography */
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  /* Typography — Times New Roman throughout */
+  --font-sans: "Times New Roman", Times, Georgia, serif;
+  --font-mono: "Times New Roman", Times, Georgia, serif;
 
   /* Spacing / layout */
   --maxw: 1080px;
-  --radius: 12px;
-  --radius-sm: 8px;
+  --radius: 8px;
+  --radius-sm: 6px;
 
-  --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+  --shadow: 0 12px 30px -16px rgba(0, 0, 0, 0.22);
   --transition: 200ms ease;
 }
 
@@ -67,10 +67,10 @@ body::before {
   inset: 0;
   z-index: -1;
   background-image:
-    linear-gradient(rgba(74, 222, 128, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(74, 222, 128, 0.035) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+    linear-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 30%, transparent 100%);
 }
 
 a {
@@ -89,7 +89,7 @@ img {
   left: -999px;
   top: 0;
   background: var(--accent);
-  color: #051b0f;
+  color: #ffffff;
   padding: 10px 16px;
   border-radius: 0 0 var(--radius-sm) 0;
   font-weight: 600;
@@ -111,7 +111,7 @@ img {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(12px);
-  background: rgba(10, 14, 20, 0.72);
+  background: rgba(251, 250, 248, 0.85);
   border-bottom: 1px solid var(--border-soft);
 }
 
@@ -125,13 +125,21 @@ img {
 }
 
 .nav__brand {
-  font-family: var(--font-mono);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--accent);
+  letter-spacing: 0.01em;
 }
-.nav__prompt { color: var(--accent); }
-.nav__tilde  { color: var(--text-faint); }
+.nav__brand-sub {
+  font-weight: 400;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
 
 .nav__menu {
   list-style: none;
@@ -299,7 +307,7 @@ img {
 }
 .btn--primary {
   background: var(--accent);
-  color: #051b0f;
+  color: #ffffff;
 }
 .btn--primary:hover {
   background: var(--accent-dim);
@@ -451,12 +459,12 @@ img {
 }
 .tags li {
   font-family: var(--font-mono);
-  font-size: 0.74rem;
+  font-size: 0.82rem;
   color: var(--accent);
-  background: rgba(74, 222, 128, 0.08);
-  border: 1px solid rgba(74, 222, 128, 0.2);
-  padding: 4px 10px;
-  border-radius: 999px;
+  background: rgba(31, 58, 95, 0.06);
+  border: 1px solid rgba(31, 58, 95, 0.18);
+  padding: 4px 12px;
+  border-radius: 4px;
 }
 
 .card__links {
@@ -522,7 +530,7 @@ img {
 .footer {
   border-top: 1px solid var(--border-soft);
   margin-top: 80px;
-  background: linear-gradient(180deg, transparent, rgba(74, 222, 128, 0.03));
+  background: linear-gradient(180deg, transparent, rgba(31, 58, 95, 0.04));
 }
 .footer__inner {
   max-width: var(--maxw);
