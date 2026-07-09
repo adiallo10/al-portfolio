@@ -126,19 +126,27 @@ img {
 
 .nav__brand {
   display: flex;
-  flex-direction: column;
-  line-height: 1.15;
+  align-items: center;
+  gap: 12px;
+}
+.nav__brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: var(--accent);
+  color: #ffffff;
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-sm);
+}
+.nav__brand-name {
+  font-weight: 700;
+  font-size: 1.1rem;
   color: var(--accent);
   letter-spacing: 0.01em;
-}
-.nav__brand-sub {
-  font-weight: 400;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-faint);
 }
 
 .nav__menu {
@@ -448,6 +456,26 @@ img {
   font-size: 0.95rem;
   margin-top: 12px;
   flex-grow: 1;
+}
+
+.card__media {
+  margin: -24px -24px 18px;
+  height: 190px;
+  overflow: hidden;
+  background: #0d1117;
+  border-bottom: 1px solid var(--border);
+}
+.card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform var(--transition);
+}
+.card:hover .card__media img,
+.card:focus-within .card__media img {
+  transform: scale(1.03);
 }
 
 .tags {

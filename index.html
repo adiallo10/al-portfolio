@@ -28,8 +28,8 @@
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary">
       <a class="nav__brand" href="#top">
-        Alhousseiny&nbsp;Diallo
-        <span class="nav__brand-sub">Security&nbsp;&amp;&nbsp;IT&nbsp;Portfolio</span>
+        <span class="nav__brand-mark" aria-hidden="true">AD</span>
+        <span class="nav__brand-name">Alhousseiny&nbsp;Diallo</span>
       </a>
 
       <button
@@ -55,7 +55,7 @@
     <section class="hero" id="about" aria-labelledby="hero-heading">
       <div class="hero__inner">
         <p class="hero__eyebrow">
-          Available for Security &amp; IT roles and the Claude Corps Fellowship
+          Available for Security &amp; IT roles
         </p>
 
         <h1 id="hero-heading" class="hero__name">
@@ -95,6 +95,9 @@
       <div class="grid grid--projects">
         <!-- Project 1 -->
         <article class="card" tabindex="0">
+          <div class="card__media">
+            <img src="assets/alert-triage-cli.png" alt="Security Alert Triage CLI terminal output: a ranked triage queue with escalate, investigate, and monitor recommendations" loading="lazy" />
+          </div>
           <div class="card__top">
             <span class="card__index">01</span>
             <span class="card__type">CLI &middot; Python</span>
@@ -121,6 +124,9 @@
 
         <!-- Project 2 -->
         <article class="card" tabindex="0">
+          <div class="card__media">
+            <img src="assets/phishing-email-analyzer.png" alt="Phishing Email Analyzer report: a CRITICAL 100/100 verdict with findings and defanged indicators" loading="lazy" />
+          </div>
           <div class="card__top">
             <span class="card__index">02</span>
             <span class="card__type">Web App &middot; Flask</span>
@@ -148,6 +154,9 @@
 
         <!-- Project 3 -->
         <article class="card" tabindex="0">
+          <div class="card__media">
+            <img src="assets/security-ops-dashboard.png" alt="Security Ops dashboard: an alerts-over-time chart with a visible spike and an Explain this trend button" loading="lazy" />
+          </div>
           <div class="card__top">
             <span class="card__index">03</span>
             <span class="card__type">Dashboard &middot; JS</span>
@@ -270,11 +279,10 @@
       </ul>
 
       <p class="footer__note">
-        Raleigh, NC &middot; Security+ (candidate) &middot; AZ-500 in progress &middot;
-        AI Fluency + Claude 101 completed
+        Raleigh, NC &middot; Security+ (candidate) &middot; AZ-500 in progress
       </p>
       <p class="footer__copy">
-        &copy; <span id="year"></span> Alhousseiny Diallo. Built with plain HTML, CSS &amp; JS.
+        &copy; <span id="year"></span> Alhousseiny Diallo
       </p>
     </div>
   </footer>
