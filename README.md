@@ -1,6 +1,6 @@
-# Al Diallo — Portfolio
+# Alhousseiny Diallo — Security & IT
 
-A clean, single-page portfolio showcasing security & IT projects built with
+A clean, single-page personal site showcasing security & IT projects built with
 AI-augmented workflows (Claude). Plain HTML/CSS/JS — easy to edit, easy to
 deploy to GitHub Pages.
 
